@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+int i, sum=0;
+char a[5];
+for(i=0;i<4;i++)
+{
+  scanf("%d", &a[i]);
+  sum = sum+ a[i];
+}
+printf("%d", sum);
