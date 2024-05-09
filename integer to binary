@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+
+  int binary[10],i,temp; //declaring variables
+
+  printf("Enter a number in the range 0 - 255: ");//asking for input
+
+  scanf("%d",&temp);//taking input
+
+  //using i to keep track of number of binary digits and iterating unitl temp is not zero.
+
+  for(i=0;temp>0;i++)
+
+  {
+
+      binary[i]=temp%2; //storing binary digit in array in reverse order
+
+      temp = temp/2; //dividing by 2 to get next binary digit
+
+  }
+
+  printf("Binary equivalent is ");
+
+  i-=1; //removing additional binary digit count
+
+  while(i>=0) //iterating array in reverse order
+
+  {
+
+      printf("%d",binary[i]);//printing the array element
+
+      i-=1;
+
+  }
+
+  return 0;
+
+}
