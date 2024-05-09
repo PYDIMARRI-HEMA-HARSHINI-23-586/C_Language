@@ -1,0 +1,29 @@
+#include<math.h>
+#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+float r1,r2;
+char i;
+d = b*b-4*a*c;
+printf("Enter the values of a,b,c:");
+scanf("%d%d%d",&a,&b,&c);
+if(d>0)
+{
+	r1 = (-b+sqrt(d))/2*a;
+	r2 = (-b-sqrt(d))/2*a;
+	printf("The roots of the quadratic equation are %f and %f",r1,r2);
+}
+else if(d<0)
+{
+	r1 = (-b+i*sqrt(d))/2*a;
+	r2 = (-b-i*sqrt(d))/2*a;
+	printf("The roots of the quadratic equation are %f and %f",r1,r2);
+}
+else
+{
+	r1 = -b/2*a;
+	r2 = -b/2*a;
+	printf("The roots of the quadratic equation are %f and %f",r1,r2);
+}
+}
